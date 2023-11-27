@@ -1,0 +1,23 @@
+:root {
+    --primary-color: red;
+    --font: Arial, Verdana;
+    --font-size: 45px;
+}
+
+h1 {
+    font-size: var(--font-size);
+    color: var(--primary-color);
+    font-family: var(--font);
+}
+
+p {
+    font-family: var(--font);
+}
+
+a {
+    color: var(--primary-color);
+}
+
+h3 {
+    font-size: var(--font-size);
+}

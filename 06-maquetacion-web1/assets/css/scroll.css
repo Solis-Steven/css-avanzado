@@ -1,0 +1,72 @@
+:root {
+    --scrollbar-color: #D3D3D4;
+    --background-scrollbar-color: #EEE;
+}
+
+/* Chrome scroll */
+.content__page::-webkit-scrollbar {
+    width: 25px;
+    background: transparent;
+}
+
+/* thumb es la parte que se puede clicar y mover */
+.content__page::-webkit-scrollbar-thumb {
+    border: 10px solid transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+
+.content__page:hover::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 0 10px var(--scrollbar-color);
+}
+
+.content__page:hover::-webkit-scrollbar-thumb:hover {
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 10px var(--secondary-color);
+}
+
+/* Es como toda la caja donde se mueve */
+.content__page::-webkit-scrollbar-track {
+    margin: 40px 0;
+}
+
+/* Mox scroll */
+.content__page {
+    scrollbar-width: thin;
+    /* first thumb color and second track color */
+    scrollbar-color: var(--scrollbar-color) transparent;
+}
+
+/* Chrome scroll sidebar */
+.layout__aside::-webkit-scrollbar {
+    width: 25px;
+    background: var(--secondary-color);
+}
+
+/* thumb es la parte que se puede clicar y mover */
+.layout__aside::-webkit-scrollbar-thumb {
+    border: 10px solid transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+
+.layout__aside:hover::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 0 10px var(--primary-color);
+}
+
+.layout__aside:hover::-webkit-scrollbar-thumb:hover {
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 10px var(--primary-color);
+}
+
+/* Es como toda la caja donde se mueve */
+.layout__aside::-webkit-scrollbar-track {
+    margin: 40px 0;
+}
+
+/* Mox scroll sidebar */
+.layout__aside {
+    scrollbar-width: thin;
+    /* first thumb color and second track color */
+    scrollbar-color: var(--scrollbar-color) var(--secondary-color);
+}
